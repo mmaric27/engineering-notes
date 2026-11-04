@@ -1,6 +1,6 @@
 # Engineering Notes
 
-Practical notes on SQL migration safety, reliability diagnostics and legacy modernization.
+Practical notes on SQL migration safety, reliability diagnostics, legacy modernization and integration architecture.
 
 These notes explain general engineering patterns. Examples use synthetic names and newly written pseudocode and are not presented as accounts of any particular employer, client, project, system or incident. No third-party source code, documentation, identifiers, infrastructure values or non-public measurements are intentionally included.
 
@@ -11,6 +11,7 @@ These notes explain general engineering patterns. Examples use synthetic names a
 | SQL and data | [Designing restartable data migrations](sql/designing-restartable-data-migrations.md) | Convergent state, concurrency, transactions, restartability and verification |
 | Reliability | [Diagnosing persistent failures caused by negative caching](reliability/diagnosing-persistent-negative-cache-failures.md) | Evidence correlation, causal confidence and safe negative caching |
 | Modernization | [Planning a safe TFVC-to-Git migration](modernization/planning-tfvc-to-git-migration.md) | History conversion, sensitive-data controls, freeze, cutover and audit linkage |
+| Architecture | [Protocol-neutral capability layers for AI channels](architecture/protocol-neutral-capability-layers-for-ai-channels.md) | Application boundaries, thin adapters, authorization and failure semantics |
 
 ## Working Principles
 
