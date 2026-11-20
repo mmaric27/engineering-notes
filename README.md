@@ -2,6 +2,8 @@
 
 Practical notes on SQL migration safety, reliability diagnostics, legacy modernization and integration architecture.
 
+![Engineering Notes: data safety, reliability and integration design](docs/images/feature.png)
+
 These notes explain general engineering patterns. Examples use synthetic names and newly written pseudocode and are not presented as accounts of any particular employer, client, project, system or incident. No third-party source code, documentation, identifiers, infrastructure values or non-public measurements are intentionally included.
 
 ## Notes
