@@ -1,4 +1,4 @@
-# Planning a Safe TFVC-to-Git Migration
+# Planning a safe TFVC-to-Git migration
 
 > This is general technical guidance using synthetic examples and public references. It is not an account of a particular employer, client, project or completed repository migration.
 

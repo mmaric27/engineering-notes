@@ -1,4 +1,4 @@
-# Diagnosing Persistent Failures Caused by Negative Caching
+# Diagnosing persistent failures caused by negative caching
 
 > This note uses a synthetic composite assembled from common distributed-systems and HTTP caching failure modes. It is not an account of a particular employer, client, system or production incident.
 
