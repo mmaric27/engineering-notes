@@ -2,9 +2,9 @@
 
 Practical notes on data safety, reliability, modernization, integration architecture and leading engineering teams. Each note focuses on a decision: what to look for, what the evidence can tell you and what to do next.
 
-![Engineering Notes: data safety, reliability and integration design](docs/images/feature.png)
+![Engineering Notes: technical decisions and team leadership, with examples in data migrations, reliability and integration design.](docs/images/feature.png)
 
-These notes explain general engineering patterns. Examples use synthetic names and newly written pseudocode and are not presented as accounts of any particular employer, client, project, system or incident. No third-party source code, documentation, identifiers, infrastructure values or non-public measurements are intentionally included.
+The notes draw on my engineering and team leadership experience. The scenarios used to illustrate decisions are hypothetical, and the runnable examples are written for this repository. They are not employer or client case studies. No third-party source code, documentation, identifiers, infrastructure values or non-public measurements are intentionally included.
 
 ## Notes
 
@@ -28,10 +28,10 @@ These notes explain general engineering patterns. Examples use synthetic names a
 
 ## About
 
-Written by [Marko Marić](https://www.linkedin.com/in/mark-om42), Senior Software Engineer and hands-on Solution Architect focused on SQL, backend and data systems, integrations, legacy modernization and production root-cause analysis.
+Written by [Marko Marić](https://www.linkedin.com/in/mark-om42), a senior backend engineer working on data modelling, enterprise integrations and solution design.
 
 Generative AI assisted with outlining and copy-editing. The author selected the topics, reviewed the technical content and approved the published wording. This statement records editorial review only and does not claim ownership of, or permission to publish, any third-party material.
 
 ## License
 
-Licensed under [Creative Commons Attribution 4.0 International](LICENSE).
+Repository documentation and artwork are licensed under [CC BY 4.0](LICENSE). Source code in `examples/` is licensed under the [MIT License](examples/LICENSE).

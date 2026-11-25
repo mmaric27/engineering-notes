@@ -122,6 +122,8 @@ Idempotency is a separate concern from confirmation. A write contract should def
 
 A timeout or cancellation does not prove that a durable operation was rolled back. Do not automatically retry an ambiguous write with a new key.
 
+For a [worked example of an order with an unknown outcome](when-an-engineering-standard-changes.md), see how the retry decision changes with the receiver’s contract. The [runnable tests](../examples/unknown-order-outcome/) check the receiver’s stored orders after the caller restarts.
+
 ## 6. Keep authority outside generated text
 
 A model-generated explanation is not the work-order record.

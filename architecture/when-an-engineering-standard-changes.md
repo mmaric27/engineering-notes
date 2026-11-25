@@ -16,6 +16,8 @@ For an API with a documented idempotency guarantee, generate the key **once per 
 
 Without that guarantee, keep the order in `unknown`. If the external system supports lookup by the caller’s order reference, use it to establish what happened. Resubmit only if the lookup is authoritative, finds no order, and the original request can no longer complete, for example because the receiver guarantees it will not commit the request after its documented processing deadline. A “not found” result from an eventually consistent view leaves the outcome `unknown`.
 
+The [protocol-neutral capability design note](protocol-neutral-capability-layers-for-ai-channels.md) puts this decision in context: a timeout at the channel boundary does not establish what happened to the underlying operation.
+
 ## 2. Distribute the revision: verify what the session loaded
 
 I want one maintained source for the rule and its rationale. The tooling can package it for different assistants without asking engineers to keep separate copies in sync.
