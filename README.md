@@ -14,6 +14,7 @@ These notes explain general engineering patterns. Examples use synthetic names a
 | Reliability | [Diagnosing persistent failures caused by negative caching](reliability/diagnosing-persistent-negative-cache-failures.md) | Evidence correlation, causal confidence and safe negative caching |
 | Modernization | [Planning a safe TFVC-to-Git migration](modernization/planning-tfvc-to-git-migration.md) | History conversion, sensitive-data controls, freeze, cutover and audit linkage |
 | Architecture | [Protocol-neutral capability layers for AI channels](architecture/protocol-neutral-capability-layers-for-ai-channels.md) | Application boundaries, thin adapters, authorization and failure semantics |
+| AI-assisted engineering | [When an engineering standard changes, what changes for the agent?](https://github.com/mmaric27/engineering-notes/blob/main/architecture/when-an-engineering-standard-changes.md) | Verify which rule revision the assistant loaded, evaluate its decision, and test the resulting software against a lost response. |
 | Team leadership | [How I approach team wellbeing and development](team-leadership/team-wellbeing-and-development.md) | Turning one-to-one feedback into action without confusing delivery metrics with individual wellbeing |
 
 ## Working Principles
