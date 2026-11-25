@@ -1,4 +1,4 @@
-# Designing Restartable Data Migrations
+# Designing restartable data migrations
 
 > This is general technical guidance using synthetic examples and public references. It is not an account of a particular employer, client, project or production migration.
 

@@ -4,6 +4,8 @@ This fictional example shows what happens when a receiver records an order but i
 
 From this directory, run `python -m unittest -v`. Only the Python standard library is required.
 
+Tested with Python 3.15.0 and SQLite 3.53.1. The receiver uses SQLite UPSERT syntax (`ON CONFLICT ... DO NOTHING`), which requires SQLite 3.24.0 or later.
+
 - **With an idempotency guarantee:** after restart, the caller recovers the original key. The receiver sees two submissions but stores exactly one order.
 - **Without an idempotency guarantee:** after restart, the caller reconciles using the original order reference rather than submitting again. A non-authoritative “not found” leaves the outcome `unknown`.
 
