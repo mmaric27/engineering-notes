@@ -1,6 +1,6 @@
 # Engineering Notes
 
-Practical notes on SQL migration safety, reliability diagnostics, legacy modernization and integration architecture.
+Practical notes on data safety, reliability, modernization, integration architecture and leading engineering teams. Each note focuses on a decision: what to look for, what the evidence can tell you and what to do next.
 
 ![Engineering Notes: data safety, reliability and integration design](docs/images/feature.png)
 
@@ -14,6 +14,7 @@ These notes explain general engineering patterns. Examples use synthetic names a
 | Reliability | [Diagnosing persistent failures caused by negative caching](reliability/diagnosing-persistent-negative-cache-failures.md) | Evidence correlation, causal confidence and safe negative caching |
 | Modernization | [Planning a safe TFVC-to-Git migration](modernization/planning-tfvc-to-git-migration.md) | History conversion, sensitive-data controls, freeze, cutover and audit linkage |
 | Architecture | [Protocol-neutral capability layers for AI channels](architecture/protocol-neutral-capability-layers-for-ai-channels.md) | Application boundaries, thin adapters, authorization and failure semantics |
+| Team leadership | [How I approach team wellbeing and development](team-leadership/team-wellbeing-and-development.md) | Turning one-to-one feedback into action without confusing delivery metrics with individual wellbeing |
 
 ## Working Principles
 
