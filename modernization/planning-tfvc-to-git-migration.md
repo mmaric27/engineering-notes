@@ -2,6 +2,8 @@
 
 > This is general technical guidance using synthetic examples and public references. It is not an account of a particular employer, client, project or completed repository migration.
 
+Decide which TFVC history you need, then use a trial import to check that each Git branch tip matches its source changeset before cleanup. At cutover, freeze TFVC, verify the final branch contents and scan the history you intend to publish before pushing it. Open Git to normal writes only after its permissions, branch policies and build validation pass their acceptance checks.
+
 ## Migration is more than copying files
 
 A TFVC-to-Git migration changes history representation, branching, contributor identity, permissions and the delivery workflow. Copying the latest source tree into a new repository may be sufficient for disposable code, but it is not enough when history, auditability or active branches matter.

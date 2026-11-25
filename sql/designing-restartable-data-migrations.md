@@ -78,7 +78,7 @@ One global transaction offers all-or-nothing semantics but may create excessive 
 
 A useful boundary is often one independently recoverable business unit, such as one parent and all required child/property changes.
 
-Illustrative control flow only:
+In this example, the cursor visits one parent at a time so each parent’s changes can commit or roll back together; on restart, the migration checks the stored data rather than relying on the cursor position.
 
 ```sql
 SET XACT_ABORT ON;
