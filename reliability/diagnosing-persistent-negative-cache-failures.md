@@ -36,6 +36,8 @@ Normalize timestamps and correlate independent evidence categories:
 - Cache hit/miss or invalidation telemetry where available.
 - External availability and user-impact measurements.
 
+Prefer a server-generated opaque identifier and log only the non-sensitive state needed for diagnosis. If separate events must be correlated by cache key, use a scoped, keyed HMAC rather than logging the raw key. Protect the HMAC key, restrict access to the telemetry and limit retention. Treat derived identifiers as potentially pseudonymous, not anonymous.
+
 Record missing telemetry explicitly. Missing evidence reduces confidence; it does not prove that an event did not occur.
 
 ## Establish baseline and episode boundaries
@@ -115,7 +117,7 @@ After remediation, test that:
 - Presence, absence and operational failure are distinct states.
 - Negative cache entries have bounded lifetime and explicit invalidation.
 - Cache keys include every input that can change the result, such as tenant, locale, authorization scope, route variant and content version where applicable.
-- Cache telemetry prefers server-generated opaque identifiers and non-sensitive state metadata; cache values are not logged. If deterministic correlation is required, use a scoped keyed HMAC with protected key material, restricted access and bounded retention. Treat derived identifiers as potentially pseudonymous personal data.
+- Relevant cache events can be correlated without logging raw cache keys, cached values or sensitive data.
 - Node-local and shared-state behavior can be distinguished.
 - Each causal link records its evidence basis, such as observed telemetry, static code inspection or controlled reproduction, and a separate confidence rating.
 - Remediation success has measurable acceptance criteria.
